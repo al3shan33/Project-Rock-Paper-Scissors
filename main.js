@@ -2,25 +2,25 @@ let computerScore = 0;
 let playerScore = 0;
 let gameCount = 0;
 
-// const choice = ['Rock', 'Paper', 'Scissors'];
-
-// function getComputerChoice() {
-//   return choice[Math.floor(Math.random() * choice.length)];
-// }
+const choice = ['Rock', 'Paper', 'Scissors'];
 
 function getComputerChoice() {
-  let randomNumber = Math.floor(Math.random() * 3);
-  switch (randomNumber) {
-    case 0:
-      return 'Rock';
-      break;
-    case 1:
-      return 'Paper';
-      break;
-    case 2:
-      return 'Scissors';
-  }
+  return choice[Math.floor(Math.random() * choice.length)];
 }
+
+// function getComputerChoice() {
+//   let randomNumber = Math.floor(Math.random() * 3);
+//   switch (randomNumber) {
+//     case 0:
+//       return 'Rock';
+//       break;
+//     case 1:
+//       return 'Paper';
+//       break;
+//     case 2:
+//       return 'Scissors';
+//   }
+// }
 
 function singleRound(playerSelection, computerSelection) {
   if (playerSelection === computerSelection) {
